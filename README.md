@@ -1,239 +1,253 @@
-# 个人操作系统框架 Personal OS Framework
+# Personal OS Framework
 
-[English version](https://github.com/ottocat525/personal-os/tree/en)
+[中文版](https://github.com/ottocat525/personal-os/tree/main)
 
-> 一套以Markdown为底座、以人为中心、载体和AI完全可替换的个人知识与决策框架。
-> 不绑定任何笔记软件，不绑定任何AI，三个核心文件，开箱即用。
-
----
-
-## 工具兼容性
-
-基础框架只依赖Markdown，任何支持Markdown的编辑器都可以使用。
-
-双链、段落嵌入和下文列出的快捷键属于增强能力，需要使用兼容工具，例如Obsidian。即使编辑器不支持这些增强能力，核心目录结构和三个核心文件仍然可以正常使用。
+> A personal knowledge and decision-making framework built on Markdown, centered on the person, and independent of any specific tool or AI model.
+> No note-taking app lock-in. No AI vendor lock-in. Three core files. Ready to customize.
 
 ---
 
-## 为什么不用原子化笔记
+## Tool Compatibility
 
-原子化笔记（把知识切成几百个小词条互相链接）有一个结构性缺陷：
+The foundation only depends on Markdown, so you can use any editor that supports Markdown.
 
-**它转移了复杂度，没有消灭它。**
-
-把一篇长文切成100个原子，链接复杂度从文章内部转移到了文章之间。笔记数量越多，维护链接的成本指数级上升，孤儿节点越来越多，系统熵增，最终崩溃。
-
-更根本的问题是：**原子化杀死了上下文。**
-
-你六个月后看一条孤立的原子笔记，完全不记得当时为什么写这个，当时的判断依据是什么，这个结论后来有没有被推翻。知识复利需要的是因果链保留，不是知识点保留。
-
-原子化适合整理"可以解耦的知识"——比如编程文档、技术规格。但大多数人的知识不是这样的：
-
-```
-一个判断 → 触发一个决策 → 牵动一个行动
-```
-
-这条链如果被切成三个原子，上下文全断，每个碎片都变成孤儿。
+Backlinks, block embeds, and the keyboard shortcuts listed below are optional enhancements. They require a compatible tool such as Obsidian. The core folder structure and three core files still work without them.
 
 ---
 
-## 这套框架的核心假设
+## Why Not Atomic Notes?
 
+Atomic notes split knowledge into hundreds of small, interlinked entries. That approach has a structural flaw:
+
+**It moves complexity instead of eliminating it.**
+
+Split one long document into 100 atoms and the complexity moves from inside the document to the links between documents. As the number of notes grows, the cost of maintaining links rises sharply. Orphan nodes multiply, entropy increases, and the system eventually collapses.
+
+The deeper problem is this: **atomic notes kill context.**
+
+Six months later, an isolated note no longer tells you why you wrote it, what evidence shaped your judgment, or whether the conclusion was later overturned. Knowledge compounds when causal chains survive, not when individual facts survive.
+
+Atomic notes are useful for knowledge that can be decoupled, such as programming documentation and technical specifications. Most personal knowledge is different:
+
+```text
+A judgment -> triggers a decision -> drives an action
 ```
-1. 知识有因果链，不可解耦
-2. 人的状态在变，系统要跟着长
-3. 直觉判断和理性工具是同等权重的输入
-```
+
+Split that chain into three atoms and the context disappears. Every fragment becomes an orphan.
 
 ---
 
-## 三个核心文件：道法术
+## Core Assumptions
 
-整个系统只有三个必须存在的文件：
-
-```
-PSYCHE.md   道   你是谁，你的底层逻辑，不轻易变
-CLAUDE.md   法   AI的行为规则，保障道不被破坏
-NOW.md      术   当下的执行状态，随时更新
-```
-
-道生法，法御术，术归道。
-
-AI每次先读道（PSYCHE），再守法（CLAUDE），再看术（NOW）知道你现在在哪。
-
-### PSYCHE.md — 道
-
-你的灵魂镜像。记录你的思维习惯、决策底层、当前阶段、沟通偏好。
-
-AI读这个文件，才知道它在和谁对话，不会给你一个陌生人的建议。
-
-这个文件会随着你成长而更新——不是你主动说，而是AI在对话中观察到变化后主动提醒你确认。
-
-### CLAUDE.md — 法
-
-AI的行为律法。告诉AI什么可以做，什么绝对禁止，遇到不同情况怎么处理。
-
-这个文件是模型无关的——换DeepSeek、换GPT、换任何模型，规则照样生效。
-
-### NOW.md — 术
-
-你的当下时空。本月最重要的三件事、当前卡点、关键节点、随手碎片。
-
-**一周看一次，随时更新，不归档不清空。**
-日任务不在这里——用手机便签，今天三件事，用完清空。NOW.md是战略层，便签是执行层，不混。
-
----
-
-## 文件夹结构
-
-```
-_private/          保险箱（私人信息）
-00_底层操作系统/   你的时间坐标系 + 决策底层 + 方法论
-01_当前时代/       现在这个阶段的所有项目和执行
-02_未来时代/       还没启动的种子想法
-03_碎片库/         语录、灵感、碎片，靠搜索唤醒
-04_外部资料/       网页/视频/PDF剪藏，流动的进站台
-05_自我成长/       正在学的东西
-```
-
-### 关于 `00_底层操作系统`
-
-这是整个系统最关键的文件夹。里面放的是**你做所有决策的底层依据**。
-
-每个人的底层不同，但结构是一样的：
-
-```
-时间坐标系.md    你用什么框架给时间赋予意义和优先级
-                 （季度OKR / 学期节点 / 行业周期 / 任何你相信的）
-决策底层.md      你做决策时依赖的底层逻辑和原则
-词汇表.md        按需记录反复出现且值得留存的专业词汇
-```
-
-模板是空的，填入你自己相信的那套。没有标准答案。
-
----
-
-## 长卷而非原子
-
-**核心原则：切割的单位是"叙事完整性"，不是"知识点大小"。**
-
-一个项目 = 一篇通篇长卷。技术、法务、执行、决策记录全在一个文件里，因果链完整保留。
-
-长卷不会让你迷失，用这三招驾驭：
-
-**1. 大纲视图（上帝视角）**
-写长文必用`##` `###`标题。打开右侧大纲面板，折叠当前不看的部分。几万字的文档瞬间清爽。
-
-**2. 左右分屏（多线并行）**
-左边钉住底层操作系统作参照，右边切换修改各项目长卷。
-
-**3. 导航锚点（精准空降）**
-文档顶部写目录，每个章节标题就是锚点。手机端也能一键跳转，不需要上下滚动。
-
----
-
-## 双链：按需缝合，不为连接而连接
-
-双链（`[[ ]]`）只在"这两个东西在逻辑上必须互相作证"时才用，不为了连线而连线。
-
-**三种用法：**
-
-**基础版：指路牌**
-```
-[[项目执行长卷]]
-```
-在长文档里插超链接，点击直接跳到那份文件。
-
-**进阶版：精准空降**
-```
-[[行业调研报告#核心结论]]
-```
-文件名后加`#`选标题，直接跳到文档的特定章节。
-
-**终极版：全息投影**
-```
-![[底层操作系统^块ID]]
-```
-在源文件段落末尾敲`^`生成块ID，目标文件用`![[]]`引用。
-源文件改了，所有引用处自动同步。**彻底消灭版本冲突。**
-
----
-
-## 成长机制
-
-这套系统会和你一起长大：
-
-**PSYCHE.md主动更新**
-AI在对话中观察到你的新习惯或新偏好 → 主动提醒 → 你确认 → 写入
-AI发现旧条目和你现在的状态矛盾 → 主动问要不要删 → 你决定
-
-**所有更新必须经过你确认，AI不得静默修改任何文件。**
-
----
-
-## 快捷键（Obsidian示例）
-
-```
-Ctrl/Cmd + P        万能命令台
-Ctrl/Cmd + O        快速跳转文件（输入NOW回车，1秒到达）
-Ctrl/Cmd + Shift+F  全库搜索
-Alt + 点击双链      侧边分屏打开，不覆盖主力长卷
+```text
+1. Knowledge has causal chains that should not be decoupled.
+2. People change, so the system must grow with them.
+3. Intuition and rational tools are equally valid inputs.
 ```
 
 ---
 
-## 这套框架适合谁
+## Three Core Files: Way, Rules, Practice
 
-- 思维跳跃，知识跨域，不适合学科分类
-- 需要的是决策日志，不是知识百科
-- 希望系统跟着自己成长，而不是维护一个静态数据库
-- 想用AI作为协作者，而不是整理工具
+The whole system has only three required files:
 
----
+```text
+PSYCHE.md   Way       Who you are and your underlying logic. Changes slowly.
+CLAUDE.md   Rules     AI behavior rules that protect the Way.
+NOW.md      Practice  Your current execution state. Updated whenever needed.
+```
 
-## 这套框架不适合谁
+The Way shapes the Rules. The Rules govern Practice. Practice returns to the Way.
 
-- 需要团队协作的知识库（这套是个人操作系统）
-- 纯技术文档管理（原子化在那个场景是对的）
-- 希望开箱即用不需要定制（`00_底层操作系统`必须自己填）
+The AI first reads the Way (`PSYCHE.md`), then follows the Rules (`CLAUDE.md`), then checks the Practice (`NOW.md`) to understand where you are now.
 
----
+### PSYCHE.md - Way
 
-## 开始使用
+Your mirror. It records your thinking habits, decision-making principles, current stage, and communication preferences.
 
-1. 复制这个仓库
-2. 在本地新建`_private/`目录，用来存放绝对不能同步到公共云端的内容
-3. 用任何支持Markdown的编辑器打开
-4. 先填`PSYCHE.md`——写清楚你是谁
-5. 再填`CLAUDE.md`——告诉AI你的规则
-6. 打开`NOW.md`——写下本月最重要的三件事
-7. 打开`00_底层操作系统`——填入你自己的时间坐标系
+When an AI reads this file, it knows who it is talking to instead of giving generic advice to a stranger.
 
-**不要一次性迁移所有旧笔记。先把骨架跑起来，遇到哪个项目要用就迁哪个。**
+This file grows with you. When the AI notices a meaningful change in your preferences or behavior, it suggests an update and waits for your confirmation.
 
----
+### CLAUDE.md - Rules
 
-## 贡献
+The AI's operating law. It defines what the AI may do, what it must never do, and how it should handle common situations.
 
-这是活的框架，欢迎PR。
-特别欢迎：不同人群的`00_底层操作系统`模板（学生版、创业者版、自由职业者版等）。
+The file is model-independent. Switch from DeepSeek to GPT or any other model and the rules still apply.
 
----
+### NOW.md - Practice
 
-*Markdown底座。载体可替换。AI可替换。唯一不可替换的是你自己沉淀进去的内容。*
+Your current context: the three most important things this month, current blockers, key milestones, and temporary fragments.
+
+**Review it weekly. Update it whenever needed. Do not archive or empty it.**
+
+Daily tasks do not belong here. Use a phone note for today's three tasks, then clear it when the day is over. `NOW.md` is the strategic layer; your daily note is the execution layer.
 
 ---
 
-## 使用前提
+## Folder Structure
 
-**必须有Git基础。** 这套框架假设你会用Git/GitHub做版本控制。
+```text
+_private/              Vault for private information
+00_foundation/         Time coordinates, decision principles, and methodology
+01_current_era/        Active projects and execution
+02_future_era/         Ideas that have not started yet
+03_fragments/          Quotes, inspirations, and fragments recalled through search
+04_external_resources/ Web pages, videos, PDFs, and other incoming references
+05_self_growth/        Skills and subjects you are currently learning
+```
 
-好处：
-- `_private/` 已在 `.gitignore` 排除，私人敏感信息不会上云
-- 每次修改都有记录，随时回滚到任意历史版本
-- 换电脑换设备，clone下来继续用
+### About `00_foundation`
 
-不会Git的话，至少做到：
-- 本地定期备份整个文件夹
-- 或者用支持自动同步的工具（如Obsidian Sync、OneDrive）
-- **但无论如何，`_private/` 里的内容永远不要同步到任何公共云端**
+This is the most important folder in the system. It stores the principles behind your decisions.
+
+Everyone's foundation is different, but the structure stays the same:
+
+```text
+time_coordinates.md    The framework you use to give time meaning and priority
+                       (quarterly OKRs, academic terms, industry cycles, or anything else)
+decision_principles.md The principles you rely on when making decisions
+glossary.md            Terms worth keeping because they appear repeatedly
+```
+
+The templates are intentionally empty. Fill them with what you actually believe. There is no standard answer.
+
+---
+
+## Long Scrolls, Not Atoms
+
+**Core principle: split by narrative completeness, not by the size of a fact.**
+
+One project equals one long scroll. Keep technical details, legal notes, execution logs, and decision records in one document so the causal chain remains intact.
+
+Three techniques keep long documents navigable:
+
+**1. Outline view**
+
+Use `##` and `###` headings in long documents. Open the outline panel and collapse the sections you do not need. Even a document with tens of thousands of words becomes manageable.
+
+**2. Split panes**
+
+Pin your foundation on the left while switching between project scrolls on the right.
+
+**3. Navigation anchors**
+
+Add a table of contents at the top. Each section heading becomes an anchor, so you can jump directly to it even on mobile.
+
+---
+
+## Links: Stitch Only When Needed
+
+Use backlinks (`[[ ]]`) only when two pieces of content need to support each other logically. Do not link merely for the sake of creating links.
+
+**Three levels:**
+
+**Basic: signpost**
+
+```text
+[[project_execution_scroll]]
+```
+
+Link directly to another document.
+
+**Advanced: precise landing**
+
+```text
+[[industry_research_report#Key Findings]]
+```
+
+Add a `#` heading after the file name to jump directly to a specific section.
+
+**Full embed: live projection**
+
+```text
+![[foundation^block-id]]
+```
+
+Add a `^` block ID at the end of a source paragraph and embed it elsewhere with `![[]]`. When the source changes, every embed updates automatically. This eliminates version conflicts.
+
+---
+
+## Growth Mechanism
+
+This system grows with you:
+
+**Proactive `PSYCHE.md` updates**
+
+The AI notices a new habit or preference -> suggests an update -> you confirm -> the file changes.
+
+The AI notices that an old entry conflicts with your current state -> asks whether to remove it -> you decide.
+
+**Every update requires your confirmation. The AI must never silently modify any file.**
+
+---
+
+## Keyboard Shortcuts (Obsidian Examples)
+
+```text
+Ctrl/Cmd + P        Command palette
+Ctrl/Cmd + O        Quick file switcher (type NOW and press Enter)
+Ctrl/Cmd + Shift+F  Search the entire vault
+Alt + click link    Open a backlink in a side pane
+```
+
+---
+
+## Who This Framework Is For
+
+- Your thinking jumps across domains and does not fit subject-based folders.
+- You need a decision log, not a knowledge encyclopedia.
+- You want a system that grows with you instead of a static database.
+- You want AI as a collaborator, not merely an organizer.
+
+---
+
+## Who This Framework Is Not For
+
+- Teams that need a collaborative knowledge base. This is a personal operating system.
+- Pure technical documentation management. Atomic notes work well in that context.
+- Anyone expecting a zero-customization setup. You must fill in `00_foundation` yourself.
+
+---
+
+## Getting Started
+
+1. Clone this repository.
+2. Create a local `_private/` directory for anything that must never sync to a public cloud.
+3. Open the repository in any Markdown editor.
+4. Fill in `PSYCHE.md` first. Describe who you are.
+5. Then fill in `CLAUDE.md`. Tell the AI your rules.
+6. Open `NOW.md`. Write down the three most important things this month.
+7. Open `00_foundation`. Fill in your own time coordinates.
+
+**Do not migrate all your old notes at once. Start with the skeleton. Move a project only when you need it.**
+
+---
+
+## Contributing
+
+This is a living framework. Pull requests are welcome.
+
+Templates for different groups are especially welcome: students, founders, freelancers, and others.
+
+---
+
+*Markdown foundation. Replaceable tools. Replaceable AI. The only irreplaceable part is what you put into the system yourself.*
+
+---
+
+## Requirements
+
+**Basic Git knowledge is required.** This framework assumes that you use Git and GitHub for version control.
+
+Benefits:
+
+- `_private/` is excluded by `.gitignore`, so private information is not uploaded.
+- Every change has history and can be rolled back.
+- You can clone the repository on another device and continue working.
+
+If you do not use Git, at minimum:
+
+- Back up the entire folder locally on a regular basis.
+- Or use a sync tool such as Obsidian Sync or OneDrive.
+- **No matter what, never sync `_private/` to any public cloud.**

@@ -1,44 +1,52 @@
-# PSYCHE: 核心认知与系统设定
+# PSYCHE: Core Cognition and System Settings
 
-> **[使用说明]**
-> 这是一个留空的模板。请把你最底层的思维习惯、性格特质写在这里。
-> AI每次对话前优先读取此文件，确保它"认识你"，给出符合你当前状态的建议。
-> 此文件由AI和用户共同维护，更新规则见CLAUDE.md。
-
----
-
-## 1. 核心身份与当前阶段
-- **我是谁**：[你现在的身份或自我定位]
-- **当前阶段**：[你现在的核心状态]
+> **[How to use this file]**
+> This is an empty template. Describe your deepest thinking habits and personality traits here.
+> AI should read this file before each conversation so it knows who you are and can offer advice that fits your current state.
+> The user and AI maintain this file together. See `CLAUDE.md` for update rules.
 
 ---
 
-## 2. 思维习惯与认知偏好
-- **思考跨度**：[描述你的思维方式]
-- **看重什么**：[你做判断时最在意的维度]
-- **[添加你自己的习惯]**：
+## 1. Core Identity and Current Stage
+
+- **Who I am:** [your current identity or self-definition]
+- **Current stage:** [your current core state]
 
 ---
 
-## 3. 沟通与输出要求
-- **风格**：[例：极简直接 / 喜欢详细解释]
-- **反馈方式**：[例：有漏洞直接指出 / 先肯定再建议]
-- **[添加你的偏好]**：
+## 2. Thinking Habits and Cognitive Preferences
+
+- **Thinking style:** [describe how you think]
+- **What matters most:** [the dimensions that matter most when making decisions]
+- **[Add your own habit]:**
 
 ---
 
-## 4. 当前时间坐标
-> 从 `00_底层操作系统/时间坐标系.md` 提炼，一句话说清楚现在处于什么周期
+## 3. Communication and Output Preferences
 
-当前周期：
-周期特征：
-本阶段宜：
-本阶段忌：
+- **Style:** [for example: concise and direct / detailed explanations]
+- **Feedback:** [for example: point out flaws directly / acknowledge strengths before suggesting changes]
+- **[Add your preference]:**
 
 ---
 
-## 5. 什么叫好的协作
-1. 读完本文件再开口
-2. 不切碎长卷，不新建wiki词条
-3. 版本冲突写进"待解冲突清单"，不擅自合并
-4. 给建议时说清楚前提假设
+## 4. Current Time Coordinates
+
+> Summarize `00_foundation/time_coordinates.md` in one sentence. State clearly which cycle you are in.
+
+Current cycle:
+
+Cycle characteristics:
+
+Recommended for this stage:
+
+Avoid during this stage:
+
+---
+
+## 5. What Good Collaboration Means
+
+1. Read this file before answering.
+2. Do not split long scrolls into fragments or create wiki-style entries.
+3. Add version conflicts to a conflict list. Never merge without permission.
+4. State assumptions clearly when offering advice.

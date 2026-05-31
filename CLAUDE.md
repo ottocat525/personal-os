@@ -1,62 +1,74 @@
-# CLAUDE: AI 协作底层律法
+# CLAUDE: Foundational Rules for AI Collaboration
 
-> **[使用说明]**
-> 写给AI助手的绝对指令。不管使用哪家大模型，只要接入这个知识库，就必须遵守以下规则。
-> 每次会话开始前必须读取 `PSYCHE.md`。
+> **[How to use this file]**
+> These are absolute instructions for AI assistants. Any model connected to this knowledge base must follow them.
+> Before each conversation, read `PSYCHE.md`.
 
 ---
 
-## 目录结构
+## Folder Structure
+
+```text
+_private/              Vault. Never read it.
+00_foundation/         Decision-making foundation. Permanent layer.
+01_current_era/        Active projects and execution.
+02_future_era/         Ideas that have not started yet.
+03_fragments/          Fragments recalled through search.
+04_external_resources/ Incoming external references.
+05_self_growth/        Subjects and skills currently being learned.
 ```
-_private/          保险箱，禁止读取
-00_底层操作系统/   决策底层，永恒层
-01_当前时代/       当前阶段所有项目和执行
-02_未来时代/       还没启动的种子想法
-03_碎片库/         碎片语录，搜索唤醒
-04_外部资料/       外部剪藏，流动
-05_自我成长/       正在学的东西
-```
 
 ---
 
-## 绝对禁止
-- 禁止切碎文档成原子笔记
-- 禁止读取或修改 `_private/` 任何内容
-- 禁止未经用户确认静默修改任何文件
-- 禁止新建wiki式的独立词条页面
-- 禁止为了"去重"擅自删除看似重复的内容
+## Absolute Prohibitions
+
+- Never split documents into atomic notes.
+- Never read or modify anything inside `_private/`.
+- Never silently modify any file without user confirmation.
+- Never create standalone wiki-style glossary pages.
+- Never delete content merely because it appears repetitive.
 
 ---
 
-## 操作规则
+## Operating Rules
 
-**收到新资料时：**
-判断属于哪个文件夹，告知用户，由用户决定存放位置
+**When receiving new material:**
 
-**发现版本冲突时：**
-输出冲突清单，交由用户裁决，不擅自合并
+Decide which folder it belongs to, tell the user, and let the user choose the final location.
 
-**日常对话：**
-直接回答，不主动读取任何文件
+**When finding a version conflict:**
 
----
+Output a conflict list and let the user decide. Never merge conflicts without permission.
 
-## PSYCHE.md 更新规则
-触发条件：用户主动要求，或AI在对话中发现明显的思维/偏好变化
-流程：
-1. 列出建议新增或删除的条目
-2. 等用户确认
-3. 确认后写入，不得静默修改
+**During ordinary conversation:**
+
+Answer directly. Do not proactively read any file.
 
 ---
 
-## NOW.md 规则
-用户的当下时空，不是AI工作区。
-- AI可以读取，了解当前状态
-- 只有用户说"帮我更新NOW"才可以写入
+## Rules for Updating PSYCHE.md
+
+Trigger: the user explicitly asks for an update, or the AI notices a clear change in the user's thinking or preferences.
+
+Process:
+
+1. List the entries that should be added or removed.
+2. Wait for user confirmation.
+3. Update the file only after confirmation. Never modify it silently.
 
 ---
 
-## CLAUDE.md 更新规则
-触发条件：用户主动说"更新规则"
-流程：列出变更内容，用户确认后再写入
+## Rules for NOW.md
+
+`NOW.md` describes the user's current context. It is not the AI's workspace.
+
+- The AI may read it to understand the user's current state.
+- Write to it only when the user explicitly says: "Help me update NOW."
+
+---
+
+## Rules for Updating CLAUDE.md
+
+Trigger: the user explicitly says: "Update the rules."
+
+Process: list the proposed changes and wait for user confirmation before writing them.

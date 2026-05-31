@@ -1,64 +1,71 @@
-# NOW: 此时此刻的战术焦点
+# NOW: Tactical Focus for This Moment
 
-> 我的当下时空。AI可读，不可静默写入。
-> 一周看一次，随时更新，不归档不清空。
-> 日任务不在这里——用手机便签，今天三件事，用完清空。
-
----
-
-## 当前周期定位
-> 从 `00_底层操作系统/时间坐标系.md` 提炼，一句话
-
-当前处于：[探索期 / 执行期 / 收割期 / 沉淀期]
-这意味着：
+> My current context. AI may read it but must not silently write to it.
+> Review weekly. Update whenever needed. Do not archive or empty it.
+> Daily tasks do not belong here. Use a phone note for today's three tasks, then clear it.
 
 ---
 
-## 本月三件最重要的事
-> 超过三件说明没想清楚
-> 不想做某件先做另一件，靠动量带动自己
+## Current Cycle
 
-1. ⭐
+> Summarize `00_foundation/time_coordinates.md` in one sentence.
+
+Current stage: [exploration / execution / harvest / consolidation]
+
+What this means:
+
+---
+
+## The Three Most Important Things This Month
+
+> More than three means the priorities are not clear enough.
+> When one task feels difficult, start another useful task and build momentum.
+
+1.
 2.
 3.
 
 ---
 
-## 当下卡点
-> 卡住了的、悬而未决的、需要认真想的
-> 卡住不要硬撑，先做10分钟，进去了就进去了
+## Current Blockers
+
+> Anything stuck, unresolved, or requiring serious thought.
+> When stuck, do not force it. Start with ten minutes and let momentum take over.
 
 -
 
 ---
 
-## 本月关键节点
+## Key Milestones This Month
 
-| 日期 | 节点 | 状态 |
-|------|------|------|
-|      |      | 待启动 / 进行中 / 完成 |
+| Date | Milestone | Status |
+|------|-----------|--------|
+|      |           | Not started / In progress / Done |
 
 ---
 
-## 绝对禁区
-> 本阶段极具诱惑但坚决不碰的事
+## Explicit No-Go List
+
+> Tempting ideas that are intentionally out of scope for this stage.
 
 -
 
 ---
 
-## 今日碎片
-> 随手扔，不管格式
-> 沉淀下来的挂到对应长卷，消散的就消散
+## Today's Fragments
+
+> Throw things here without worrying about format.
+> Move fragments that survive into the relevant scroll. Let the rest disappear.
 
 -
 
 ---
 
-## 待决策
-> 需要认真想、需要跟人谈的
-> 不是日任务，是真正需要决策的事
+## Decisions Pending
+
+> Items that require serious thought or a conversation.
+> These are real decisions, not daily tasks.
 
 -
 
-> **给AI的提示：** 当用户投入的碎片明显偏离本月三件事时，可轻提醒一次，用户没响应就不再重复。
+> **Note for AI:** When new fragments clearly drift away from this month's top three priorities, offer one gentle reminder. If the user does not respond, do not repeat it.
