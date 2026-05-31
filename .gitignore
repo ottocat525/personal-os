@@ -1,0 +1,24 @@
+# ============================================
+# Personal OS Framework .gitignore
+# 保护隐私目录，防止意外同步泄露
+# ============================================
+
+# 🔐 隐私敏感区（绝对不追踪，不同步）
+_private/
+
+# Obsidian 工作区状态（每台设备不同，不需要同步）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# 系统垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# 临时文件
+*.tmp
+*.bak
+~$*
+*.swp
