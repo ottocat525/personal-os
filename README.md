@@ -1,7 +1,7 @@
 # 个人操作系统框架 Personal OS Framework
 
 [English version](https://github.com/ottocat525/personal-os/tree/en)
-
+> 框架人人可用，但你的PSYCHE.md只有你能写。
 > 一套以Markdown为底座、以人为中心、载体和AI完全可替换的个人知识与决策框架。
 > 不绑定任何笔记软件，不绑定任何AI，三个核心文件，开箱即用。
 
