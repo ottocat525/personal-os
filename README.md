@@ -1,7 +1,7 @@
 # Personal OS Framework
 
 [中文版](https://github.com/ottocat525/personal-os/tree/main)
-
+> The framework is for everyone. Your PSYCHE.md can only be written by you.
 > A personal knowledge and decision-making framework built on Markdown, centered on the person, and independent of any specific tool or AI model.
 > No note-taking app lock-in. No AI vendor lock-in. Three core files. Ready to customize.
 
